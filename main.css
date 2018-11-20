@@ -1,0 +1,201 @@
+body {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+#whole {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#menu {
+    background: #005866;
+    padding: 10px; /*try to change it to be responsive*/
+}
+
+#menu ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5%;
+    display: block;
+    font-family: 'Exo', sans-serif;
+    font-size: 1.1rem;
+}
+
+#menu a:hover {
+    background: #038C8E;
+}
+
+#main-banner {
+    background-image: url("/pics/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+    flex-flow: column;
+    align-items: center;
+    height: 70vh;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#main-banner img {
+    padding-left: 25px;
+}
+
+h1.motto {
+    margin-top: 3rem;
+    font-family: 'Exo', sans-serif;
+}
+
+h2.section-title {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-block-start: 0;
+    font-family: 'Exo', sans-serif;
+    color: lightgray;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.portrait {
+    border-radius: 50%; 
+    margin: 20px auto;
+    }
+
+section#about {
+    display: flex;
+    flex-flow: column;
+    padding: 3rem 5rem;
+    background: #005866;
+    color: white;
+    text-align: center;
+}
+
+section#skills {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.skill-table {
+    padding: 2em;
+    margin-right: 2%;
+
+}
+
+td.left-column {
+    text-align: right;
+    color: gray;
+    padding-right: 4em;
+}
+
+h3.professional-projects {
+    background-image: url("/pics/proj-inf-pasaz.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    color: white;
+    font-size: 2rem;
+}
+
+h3.graphic-projects {
+    background-image: url("/pics/proj-zuk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    color: white;
+    font-size: 2rem;
+}
+
+h3.social-projects {
+    background-image: url("/pics/proj-papkins.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    color: white;
+    font-size: 2rem;
+}
+
+div.project-details {
+    padding: 1vw 3vw;
+}
+
+div.interests-describe {
+    padding: 0 3vw;
+}
+
+#page-bottom {
+    background: #005866;    
+    color: white;
+    padding: 1vw;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+div.footer-rights {
+    padding: 2vh;
+}
+
+div.social {
+    padding-bottom: 2vh;
+}
+
+#page-bottom img {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #page-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div.footer-rights {
+        padding: 0;
+    }
+    
+    div.social {
+        padding-bottom: 0;
+    }
+
+    div.project-describe {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+    }
+
+    .project-describe h3 {
+        min-width: 450px;
+    }
+}
